@@ -1,0 +1,29 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\source\\bgs_skate_test\\bgs_skate_testgamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\x64\\bgs_skate_testeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\bgs_skate_test\\definitions.bgs_skate_test.h",
+            "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\source\\bgs_skate_test\\bgs_skate_testgamemode.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\unrealeditor\\inc\\bgs_skate_test\\uht\\bgs_skate_testgamemode.generated.h",
+            "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\source\\bgs_skate_test\\bgs_skate_testcharacter.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\experimental\\iris\\core\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\unrealeditor\\inc\\bgs_skate_test\\uht\\bgs_skate_testcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

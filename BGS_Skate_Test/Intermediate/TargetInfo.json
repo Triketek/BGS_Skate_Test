@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "BGS_Skate_Test",
+			"Path": "..\\Source\\BGS_Skate_Test.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "BGS_Skate_TestEditor",
+			"Path": "..\\Source\\BGS_Skate_TestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
