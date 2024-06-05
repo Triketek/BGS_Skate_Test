@@ -10,6 +10,7 @@
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
+#include "Math/UnrealMathUtility.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
@@ -98,6 +99,7 @@ void ABGS_Skate_TestCharacter::Move(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
 
+
 	if (Controller != nullptr)
 	{
 		// find out which way is forward
@@ -105,14 +107,24 @@ void ABGS_Skate_TestCharacter::Move(const FInputActionValue& Value)
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
 		// get forward vector
-		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		/*const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 	
 		// get right vector 
-		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);*/
+
+		const FVector ForwardDirection = GetActorForwardVector();
+
+		FVector RightDirection = GetActorRightVector();
 
 		// add movement 
-		AddMovementInput(ForwardDirection, MovementVector.Y);
-		AddMovementInput(RightDirection, MovementVector.X);
+		AddMovementInput(ForwardDirection, FMath::Lerp(MovementVector.Y, lastDirection.Y, 0.01));
+		lastDirection = MovementVector;
+		if (MovementVector.Y != 0 && GetVelocity().Length() != 0)
+		{
+			AddMovementInput(RightDirection, (MovementVector.X) * 0.01);
+		};
+
+		
 	}
 }
 
@@ -121,10 +133,10 @@ void ABGS_Skate_TestCharacter::Look(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
 
-	if (Controller != nullptr)
+	/*if (Controller != nullptr)
 	{
 		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
-	}
+	}*/
 }

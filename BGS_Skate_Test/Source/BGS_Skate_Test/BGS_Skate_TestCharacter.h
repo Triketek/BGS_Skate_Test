@@ -69,5 +69,25 @@ public:
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	UFUNCTION(BlueprintCallable)
+	float GerInputForward() { return lastDirection.Y; };
+
+	UFUNCTION(BlueprintCallable)
+	float GerInputRight() { return lastDirection.X; };
+
+
+private:
+
+	UPROPERTY(EditDefaultsOnly)
+	FVector2D lastDirection;
+
+
+
+
+
+
+
+
 };
 

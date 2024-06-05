@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\unrealeditor\\inc\\bgs_skate_test\\uht\\bgs_skate_test.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\x64\\bgs_skate_testeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\triket\\documents\\github\\bgs_skate_test\\bgs_skate_test\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\bgs_skate_test\\definitions.bgs_skate_test.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
