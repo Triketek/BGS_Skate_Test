@@ -2025,3 +2025,9 @@ RightEye
 [2024.06.05-00.25.04:450][677]LogFileHelpers: InternalPromptForCheckoutAndSave took 61 ms (total: 1.80 sec)
 [2024.06.05-00.25.04:452][677]AssetCheck: New page: Asset Save: Skateboarding_2__UE
 [2024.06.05-00.25.04:452][677]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/Animations/skateboarding/Skateboarding_2__UE.Skateboarding_2__UE
+[2024.06.05-00.26.16:751][570]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-00.26.16:804][570]LogSavePackage: Moving output files for package: /Game/Animations/skateboarding/Skateboarding_3__UE
+[2024.06.05-00.26.16:804][570]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/Skateboarding_3__UE3040A12A40A5148632B0D0942134EB39.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Animations/skateboarding/Skateboarding_3__UE.uasset'
+[2024.06.05-00.26.16:810][570]LogFileHelpers: InternalPromptForCheckoutAndSave took 58 ms (total: 1.86 sec)
+[2024.06.05-00.26.16:811][570]AssetCheck: New page: Asset Save: Skateboarding_3__UE
+[2024.06.05-00.26.16:811][570]LogContentValidation: Display: Validating /Script/Engine.AnimSequence /Game/Animations/skateboarding/Skateboarding_3__UE.Skateboarding_3__UE
