@@ -15,10 +15,18 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_BGS_Skate_Test();
 // End Cross Module References
+	DEFINE_FUNCTION(ABGS_Skate_TestCharacter::execAdjustSkateToFloor)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AdjustSkateToFloor();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABGS_Skate_TestCharacter::execGerInputRight)
 	{
 		P_FINISH;
@@ -37,10 +45,33 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 	{
 		UClass* Class = ABGS_Skate_TestCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "AdjustSkateToFloor", &ABGS_Skate_TestCharacter::execAdjustSkateToFloor },
 			{ "GerInputForward", &ABGS_Skate_TestCharacter::execGerInputForward },
 			{ "GerInputRight", &ABGS_Skate_TestCharacter::execGerInputRight },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "BGS_Skate_TestCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABGS_Skate_TestCharacter, nullptr, "AdjustSkateToFloor", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics
 	{
@@ -150,6 +181,10 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_lastDirection_MetaData[];
 #endif
 		static const UECodeGen_Private::FStructPropertyParams NewProp_lastDirection;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_skateSM_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_skateSM;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -160,6 +195,7 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor, "AdjustSkateToFloor" }, // 1720250174
 		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward, "GerInputForward" }, // 2482088517
 		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight, "GerInputRight" }, // 243614828
 	};
@@ -264,6 +300,14 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_lastDirection = { "lastDirection", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABGS_Skate_TestCharacter, lastDirection), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_lastDirection_MetaData), Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_lastDirection_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_skateSM_MetaData[] = {
+		{ "Category", "BGS_Skate_TestCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "BGS_Skate_TestCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_skateSM = { "skateSM", nullptr, (EPropertyFlags)0x0040000000090009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABGS_Skate_TestCharacter, skateSM), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_skateSM_MetaData), Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_skateSM_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_FollowCamera,
@@ -272,6 +316,7 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_LookAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_lastDirection,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::NewProp_skateSM,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABGS_Skate_TestCharacter>::IsAbstract,
@@ -311,9 +356,9 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABGS_Skate_TestCharacter, ABGS_Skate_TestCharacter::StaticClass, TEXT("ABGS_Skate_TestCharacter"), &Z_Registration_Info_UClass_ABGS_Skate_TestCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABGS_Skate_TestCharacter), 601663896U) },
+		{ Z_Construct_UClass_ABGS_Skate_TestCharacter, ABGS_Skate_TestCharacter::StaticClass, TEXT("ABGS_Skate_TestCharacter"), &Z_Registration_Info_UClass_ABGS_Skate_TestCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABGS_Skate_TestCharacter), 3327039784U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_878316090(TEXT("/Script/BGS_Skate_Test"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_3744404194(TEXT("/Script/BGS_Skate_Test"),
 		Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

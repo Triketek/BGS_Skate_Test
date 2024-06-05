@@ -19,6 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAdjustSkateToFloor); \
 	DECLARE_FUNCTION(execGerInputRight); \
 	DECLARE_FUNCTION(execGerInputForward);
 

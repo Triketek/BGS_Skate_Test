@@ -1706,3 +1706,257 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2024.06.05-21.25.55:592][101]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
 [2024.06.05-21.25.55:595][101]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
 [2024.06.05-21.25.55:647][102]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2024.06.05-22.10.36:120][435]LogDerivedDataCache: C:/Users/Triket/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.191 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 1066 files in 1858 folders with total size 63 MiB.
+[2024.06.05-22.40.25:833][904]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.40.26:635][945]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.40.28:902][186]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.40.35:991][ 17]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2024.06.05-22.40.36:028][ 17]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2024.06.05-22.40.36:651][ 75]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.40.36:691][ 75]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.40.36:806][ 75]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2024.06.05-22.40.36:807][ 75]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/BP_ThirdPersonCharacterA546085B4AEB8C6E44B696ABA2AE355B.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2024.06.05-22.40.36:818][ 75]LogFileHelpers: InternalPromptForCheckoutAndSave took 166 ms (total: 498 ms)
+[2024.06.05-22.40.36:820][ 75]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2024.06.05-22.40.36:821][ 75]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2024.06.05-22.40.40:559][485]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.05-22.41.04:527][246]LogLiveCoding: Display:    Creating library C:\Users\Triket\Documents\GitHub\BGS_Skate_Test\BGS_Skate_Test\Binaries\Win64\UnrealEditor-BGS_Skate_Test.patch_4.lib and object C:\Users\Triket\Documents\GitHub\BGS_Skate_Test\BGS_Skate_Test\Binaries\Win64\UnrealEditor-BGS_Skate_Test.patch_4.exp
+[2024.06.05-22.41.04:678][254]LogClass: UPackage /Script/BGS_Skate_Test Reload.
+[2024.06.05-22.41.04:678][254]LogClass: UClass BGS_Skate_TestCharacter Reload.
+[2024.06.05-22.41.04:678][254]LogClass: Could not find existing class BGS_Skate_TestCharacter in package /Script/BGS_Skate_Test for reload, assuming new or modified class
+[2024.06.05-22.41.04:678][254]LogClass: Function GerInputForward is new or belongs to a modified class.
+[2024.06.05-22.41.04:678][254]LogClass: Function GerInputRight is new or belongs to a modified class.
+[2024.06.05-22.41.04:690][254]Re-instancing BGS_Skate_TestCharacter after reload.
+[2024.06.05-22.41.04:804][254]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2024.06.05-22.41.05:194][255]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2024.06.05-22.41.05:194][255]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.06.05-22.41.13:378][ 52]LogViewport: Scene viewport resized to 1686x987, mode Windowed.
+[2024.06.05-22.41.16:872][438]LogSlate: Took 0.000805 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2024.06.05-22.41.39:976][ 61]BlueprintLog: New page: Compile BP_ThirdPersonCharacter
+[2024.06.05-22.41.40:088][ 61]LogUObjectHash: Compacting FUObjectHashTables data took   1.62ms
+[2024.06.05-22.41.40:582][106]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.41.40:619][106]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2024.06.05-22.41.40:620][106]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/BP_ThirdPersonCharacterEF624E5B4C5BD981104F83B15E9F0FAA.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2024.06.05-22.41.40:627][106]LogFileHelpers: InternalPromptForCheckoutAndSave took 44 ms (total: 543 ms)
+[2024.06.05-22.41.40:628][106]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2024.06.05-22.41.40:628][106]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2024.06.05-22.41.52:840][521]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.41.52:870][521]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2024.06.05-22.41.52:871][521]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/BP_ThirdPersonCharacter505667524328AB23208DE690AB503430.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2024.06.05-22.41.52:877][521]LogFileHelpers: InternalPromptForCheckoutAndSave took 37 ms (total: 581 ms)
+[2024.06.05-22.41.52:879][521]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2024.06.05-22.41.52:879][521]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2024.06.05-22.41.56:837][936]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-22.41.56:844][936]LogContentBundle: [ThirdPersonMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.06.05-22.41.56:844][936]LogWorldPartition: Display: GenerateStreaming for 'ThirdPersonMap' started...
+[2024.06.05-22.41.56:850][936]LogWorldPartition: Display: GenerateStreaming for 'ThirdPersonMap' took 6 ms (total: 19 ms)
+[2024.06.05-22.41.56:850][936]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.05-22.41.56:851][936]PIE: New page: PIE session: ThirdPersonMap (5 jun. 2024 16:41:56)
+[2024.06.05-22.41.56:885][936]LogPlayLevel: Creating play world package: /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap
+[2024.06.05-22.41.56:889][936]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003442s)
+[2024.06.05-22.41.56:889][936]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap to /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap.ThirdPersonMap (0.003485s)
+[2024.06.05-22.41.56:928][936]LogUObjectHash: Compacting FUObjectHashTables data took   1.39ms
+[2024.06.05-22.41.56:935][936]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.41.56:935][936]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-22.41.56:935][936]LogAIModule: Creating AISystem for world ThirdPersonMap
+[2024.06.05-22.41.56:936][936]LogWorldPartition: ULevel::OnLevelLoaded(ThirdPersonMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.06.05-22.41.56:936][936]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.06.05-22.41.56:936][936]LogWorldPartition: UWorldPartition::Initialize : World = ThirdPersonMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.06.05-22.41.56:936][936]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.06.05-22.41.56:937][936]LogContentBundle: [ThirdPersonMap(Standalone)] Creating new contrainer.
+[2024.06.05-22.41.56:937][936]LogWorldPartition: Display: WorldPartition initialize took 1 ms (total: 99 ms)
+[2024.06.05-22.41.56:937][936]LogPlayLevel: PIE: World Init took: (0.002185s)
+[2024.06.05-22.41.56:937][936]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-22.41.56:937][936]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-22.41.56:937][936]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-22.41.56:937][936]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-22.41.56:937][936]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-22.41.56:937][936]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-22.41.56:939][936]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-22.41.56:958][936]LogAudioMixer: Display: Using Audio Hardware Device Speakers (2- HyperX Cloud Flight Wireless)
+[2024.06.05-22.41.56:958][936]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-22.41.56:958][936]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-22.41.56:958][936]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-22.41.56:959][936]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=9
+[2024.06.05-22.41.56:959][936]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=9
+[2024.06.05-22.41.56:960][936]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=9
+[2024.06.05-22.41.56:960][936]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=9
+[2024.06.05-22.41.56:960][936]LogInit: FAudioDevice initialized with ID 9.
+[2024.06.05-22.41.56:960][936]LogAudio: Display: Audio Device (ID: 9) registered with world 'ThirdPersonMap'.
+[2024.06.05-22.41.56:960][936]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 9
+[2024.06.05-22.41.56:963][936]LogLoad: Game class is 'BGS_Skate_TestGameMode'
+[2024.06.05-22.41.56:964][936]LogWorld: Bringing World /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap.ThirdPersonMap up for play (max tick rate 0) at 2024.06.05-19.41.56
+[2024.06.05-22.41.56:964][936]LogWorld: Bringing up level for play took: 0.001512
+[2024.06.05-22.41.56:966][936]LogOnline: OSS: Created online subsystem instance for: :Context_26
+[2024.06.05-22.41.56:968][936]PIE: Server logged in
+[2024.06.05-22.41.56:969][936]PIE: Play in editor total start time 0,126 seconds.
+[2024.06.05-22.42.05:326][914]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-22.42.05:326][914]LogWorld: BeginTearingDown for /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap
+[2024.06.05-22.42.05:326][914]LogWorld: UWorld::CleanupWorld for ThirdPersonMap, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-22.42.05:326][914]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-22.42.05:326][914]LogContentBundle: [ThirdPersonMap(Standalone)] Deleting container.
+[2024.06.05-22.42.05:329][914]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-22.42.05:333][914]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-22.42.05:347][914]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-22.42.05:347][914]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 9
+[2024.06.05-22.42.05:347][914]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.06.05-22.42.05:349][914]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=9
+[2024.06.05-22.42.05:355][914]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-22.42.05:358][914]LogUObjectHash: Compacting FUObjectHashTables data took   1.27ms
+[2024.06.05-22.42.05:417][915]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2024.06.05-22.50.49:531][141]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.05-22.50.56:620][955]LogLiveCoding: Display:    Creating library C:\Users\Triket\Documents\GitHub\BGS_Skate_Test\BGS_Skate_Test\Binaries\Win64\UnrealEditor-BGS_Skate_Test.patch_5.lib and object C:\Users\Triket\Documents\GitHub\BGS_Skate_Test\BGS_Skate_Test\Binaries\Win64\UnrealEditor-BGS_Skate_Test.patch_5.exp
+[2024.06.05-22.50.56:753][962]LogClass: UPackage /Script/BGS_Skate_Test Reload.
+[2024.06.05-22.50.56:753][962]LogClass: UClass BGS_Skate_TestCharacter Reload.
+[2024.06.05-22.50.56:753][962]LogClass: Could not find existing class BGS_Skate_TestCharacter in package /Script/BGS_Skate_Test for reload, assuming new or modified class
+[2024.06.05-22.50.56:753][962]LogClass: Function AdjustSkateToFloor is new or belongs to a modified class.
+[2024.06.05-22.50.56:753][962]LogClass: Function GerInputForward is new or belongs to a modified class.
+[2024.06.05-22.50.56:753][962]LogClass: Function GerInputRight is new or belongs to a modified class.
+[2024.06.05-22.50.56:762][962]Re-instancing BGS_Skate_TestCharacter after reload.
+[2024.06.05-22.50.56:873][962]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2024.06.05-22.50.57:212][963]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2024.06.05-22.50.57:212][963]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2024.06.05-22.52.24:150][596]LogLiveCoding: Display: Starting Live Coding compile.
+[2024.06.05-22.52.31:212][299]LogLiveCoding: Display:    Creating library C:\Users\Triket\Documents\GitHub\BGS_Skate_Test\BGS_Skate_Test\Binaries\Win64\UnrealEditor-BGS_Skate_Test.patch_6.lib and object C:\Users\Triket\Documents\GitHub\BGS_Skate_Test\BGS_Skate_Test\Binaries\Win64\UnrealEditor-BGS_Skate_Test.patch_6.exp
+[2024.06.05-22.52.31:635][308]LogUObjectHash: Compacting FUObjectHashTables data took   1.51ms
+[2024.06.05-22.52.31:986][309]Display: Reload/Re-instancing Complete: 1 class unchanged, 3 functions remapped
+[2024.06.05-22.52.31:986][309]LogLiveCoding: Display: Live coding succeeded
+[2024.06.05-22.52.33:098][380]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2024.06.05-22.52.33:104][380]LogContentBundle: [ThirdPersonMap(Standalone)] Generating Streaming for 0 Content Bundles.
+[2024.06.05-22.52.33:105][380]LogWorldPartition: Display: GenerateStreaming for 'ThirdPersonMap' started...
+[2024.06.05-22.52.33:106][380]LogWorldPartition: Display: GenerateStreaming for 'ThirdPersonMap' took 1 ms (total: 20 ms)
+[2024.06.05-22.52.33:106][380]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2024.06.05-22.52.33:107][380]PIE: New page: PIE session: ThirdPersonMap (5 jun. 2024 16:52:33)
+[2024.06.05-22.52.33:107][380]LogPlayLevel: Creating play world package: /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap
+[2024.06.05-22.52.33:110][380]LogPlayLevel: PIE: StaticDuplicateObject took: (0.003665s)
+[2024.06.05-22.52.33:110][380]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap to /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap.ThirdPersonMap (0.003695s)
+[2024.06.05-22.52.33:206][380]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2024.06.05-22.52.33:211][380]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.52.33:211][380]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-22.52.33:211][380]LogAIModule: Creating AISystem for world ThirdPersonMap
+[2024.06.05-22.52.33:212][380]LogWorldPartition: ULevel::OnLevelLoaded(ThirdPersonMap)(bIsOwningWorldGameWorld=1, bIsOwningWorldPartitioned=1, InitializeForMainWorld=1, InitializeForEditor=0, InitializeForGame=1)
+[2024.06.05-22.52.33:212][380]LogWorldPartition: Display: WorldPartition initialize started...
+[2024.06.05-22.52.33:212][380]LogWorldPartition: UWorldPartition::Initialize : World = ThirdPersonMap, World Type = PIE, IsMainWorldPartition = 1, Location = V(0), Rotation = R(0), IsEditor = 0, IsGame = 0, IsPIEWorldTravel = 0, IsCooking = 0
+[2024.06.05-22.52.33:212][380]LogWorldPartition: UWorldPartition::Initialize Context : World NetMode = Standalone, IsServer = 0, IsDedicatedServer = 0, IsServerStreamingEnabled = 0, IsServerStreamingOutEnabled = 0, IsUsingMakingVisibleTransaction = 0, IsUsingMakingInvisibleTransaction = 0
+[2024.06.05-22.52.33:213][380]LogContentBundle: [ThirdPersonMap(Standalone)] Creating new contrainer.
+[2024.06.05-22.52.33:213][380]LogWorldPartition: Display: WorldPartition initialize took 1 ms (total: 100 ms)
+[2024.06.05-22.52.33:213][380]LogPlayLevel: PIE: World Init took: (0.002477s)
+[2024.06.05-22.52.33:213][380]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2024.06.05-22.52.33:213][380]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2024.06.05-22.52.33:213][380]LogAudio: Display: AudioDevice MaxSources: 32
+[2024.06.05-22.52.33:213][380]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2024.06.05-22.52.33:213][380]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2024.06.05-22.52.33:213][380]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2024.06.05-22.52.33:217][380]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2024.06.05-22.52.33:235][380]LogAudioMixer: Display: Using Audio Hardware Device Speakers (2- HyperX Cloud Flight Wireless)
+[2024.06.05-22.52.33:235][380]LogAudioMixer: Display: Initializing Sound Submixes...
+[2024.06.05-22.52.33:235][380]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2024.06.05-22.52.33:236][380]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2024.06.05-22.52.33:236][380]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=10
+[2024.06.05-22.52.33:236][380]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=10
+[2024.06.05-22.52.33:238][380]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=10
+[2024.06.05-22.52.33:238][380]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=10
+[2024.06.05-22.52.33:238][380]LogInit: FAudioDevice initialized with ID 10.
+[2024.06.05-22.52.33:238][380]LogAudio: Display: Audio Device (ID: 10) registered with world 'ThirdPersonMap'.
+[2024.06.05-22.52.33:238][380]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 10
+[2024.06.05-22.52.33:241][380]LogLoad: Game class is 'BGS_Skate_TestGameMode'
+[2024.06.05-22.52.33:242][380]LogWorld: Bringing World /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap.ThirdPersonMap up for play (max tick rate 0) at 2024.06.05-19.52.33
+[2024.06.05-22.52.33:242][380]LogWorld: Bringing up level for play took: 0.001673
+[2024.06.05-22.52.33:244][380]LogOnline: OSS: Created online subsystem instance for: :Context_27
+[2024.06.05-22.52.33:247][380]PIE: Server logged in
+[2024.06.05-22.52.33:248][380]PIE: Play in editor total start time 0,143 seconds.
+[2024.06.05-22.52.44:581][542]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-22.52.44:581][542]LogWorld: BeginTearingDown for /Game/ThirdPerson/Maps/UEDPIE_0_ThirdPersonMap
+[2024.06.05-22.52.44:581][542]LogWorld: UWorld::CleanupWorld for ThirdPersonMap, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-22.52.44:582][542]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-22.52.44:582][542]LogContentBundle: [ThirdPersonMap(Standalone)] Deleting container.
+[2024.06.05-22.52.44:585][542]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2024.06.05-22.52.44:589][542]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-22.52.44:604][542]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2024.06.05-22.52.44:612][542]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 10
+[2024.06.05-22.52.44:612][542]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.06.05-22.52.44:614][542]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=10
+[2024.06.05-22.52.44:619][542]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2024.06.05-22.52.44:629][542]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2024.06.05-22.52.44:688][543]LogPlayLevel: Display: Destroying online subsystem :Context_27
+[2024.06.05-22.54.03:830][218]LogAssetEditorSubsystem: Opening Asset editor for StaticMesh /Game/Meshes/Skate/skate.skate
+[2024.06.05-22.54.03:905][218]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2024.06.05-22.54.03:905][218]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2024.06.05-22.54.04:427][218]LogViewport: Scene viewport resized to 1877x1272, mode Windowed.
+[2024.06.05-22.54.48:835][415]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.54.48:884][415]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/Skate/skate" FILE="../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/skate.uasset" SILENT=true
+[2024.06.05-22.54.48:899][415]LogSavePackage: Moving output files for package: /Game/Meshes/Skate/skate
+[2024.06.05-22.54.48:899][415]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/skate10E75E7E4607C7E8D14B4A9EEEFB4967.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/skate.uasset'
+[2024.06.05-22.54.48:909][415]LogFileHelpers: InternalPromptForCheckoutAndSave took 74 ms (total: 655 ms)
+[2024.06.05-22.54.48:915][415]AssetCheck: New page: Asset Save: skate
+[2024.06.05-22.54.48:915][415]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Meshes/Skate/skate.skate
+[2024.06.05-22.56.02:165][ 66]LogSlate: Window 'skate' being destroyed
+[2024.06.05-22.56.02:223][ 66]LogWorld: UWorld::CleanupWorld for World_18, bSessionEnded=true, bCleanupResources=true
+[2024.06.05-22.56.02:223][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2024.06.05-22.56.35:575][257]LogSlate: Window 'Interchange Pipeline Configuration (Reimport Content)' being destroyed
+[2024.06.05-22.56.35:585][257]LogInterchangeEngine: [Pending] Importing
+[2024.06.05-22.56.35:585][257]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/Triket/Downloads/model.obj]
+[2024.06.05-22.56.35:604][257]LogTemp: Warning: Interchange Obj translator: Unexpected extra arguments on newmtl keyword
+[2024.06.05-22.56.35:625][258]LogInterchangeEngine: [Pending] Importing
+[2024.06.05-22.56.35:734][261]LogStaticMesh: Display: Building static mesh skate...
+[2024.06.05-22.56.35:735][261]LogInterchangeEngine: [Success] Import Done
+[2024.06.05-22.56.35:769][262]LogStaticMesh: Built static mesh [0.04s] /Game/Meshes/Skate/skate.skate
+[2024.06.05-22.56.35:775][262]LogStaticMesh: Warning: skate has some nearly zero normals which can create some issues. (Tolerance of 1E-4)
+[2024.06.05-22.56.35:775][262]LogStaticMesh: Warning: skate has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2024.06.05-22.56.35:817][262]LogInterchangeEngine: [Success] Import Done
+[2024.06.05-22.56.37:878][431]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.56.37:946][431]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/Skate/skate" FILE="../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/skate.uasset" SILENT=true
+[2024.06.05-22.56.37:952][431]LogSavePackage: Moving output files for package: /Game/Meshes/Skate/skate
+[2024.06.05-22.56.37:952][431]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/skateE6C660AF44AE64C1BD4A58821348F933.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/skate.uasset'
+[2024.06.05-22.56.37:962][431]LogFileHelpers: InternalPromptForCheckoutAndSave took 84 ms (total: 740 ms)
+[2024.06.05-22.56.37:963][431]AssetCheck: New page: Asset Save: skate
+[2024.06.05-22.56.37:964][431]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Meshes/Skate/skate.skate
+[2024.06.05-22.57.06:522][900]LogSlate: Window 'Interchange Pipeline Configuration (Reimport Content)' being destroyed
+[2024.06.05-22.57.06:531][900]LogInterchangeEngine: [Pending] Importing
+[2024.06.05-22.57.06:531][900]LogInterchangeEngine: Display: Interchange start importing source [C:/Users/Triket/Downloads/model.obj]
+[2024.06.05-22.57.06:558][901]LogInterchangeEngine: [Pending] Importing
+[2024.06.05-22.57.06:660][903]LogStaticMesh: Display: Building static mesh skate...
+[2024.06.05-22.57.06:661][903]LogInterchangeEngine: [Success] Import Done
+[2024.06.05-22.57.06:687][904]LogStaticMesh: Built static mesh [0.03s] /Game/Meshes/Skate/skate.skate
+[2024.06.05-22.57.06:692][904]LogStaticMesh: Warning: skate has some nearly zero normals which can create some issues. (Tolerance of 1E-4)
+[2024.06.05-22.57.06:692][904]LogStaticMesh: Warning: skate has some nearly zero bi-normals which can create some issues. (Tolerance of 1E-4)
+[2024.06.05-22.57.06:808][904]LogInterchangeEngine: [Success] Import Done
+[2024.06.05-22.57.08:475][ 33]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.57.08:544][ 33]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/Skate/skate" FILE="../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/skate.uasset" SILENT=true
+[2024.06.05-22.57.08:549][ 33]LogSavePackage: Moving output files for package: /Game/Meshes/Skate/skate
+[2024.06.05-22.57.08:550][ 33]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/skate6EB7089B4F2B517297C4008DB2B9889C.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/skate.uasset'
+[2024.06.05-22.57.08:561][ 33]LogFileHelpers: InternalPromptForCheckoutAndSave took 85 ms (total: 825 ms)
+[2024.06.05-22.57.08:562][ 33]AssetCheck: New page: Asset Save: skate
+[2024.06.05-22.57.08:562][ 33]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Meshes/Skate/skate.skate
+[2024.06.05-22.57.15:988][881]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.57.16:028][881]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2024.06.05-22.57.16:029][881]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/BP_ThirdPersonCharacter3F344930447FD9DEFCAE2EB77DF52613.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2024.06.05-22.57.16:036][881]LogFileHelpers: InternalPromptForCheckoutAndSave took 47 ms (total: 873 ms)
+[2024.06.05-22.57.16:037][881]AssetCheck: New page: Asset Save: BP_ThirdPersonCharacter
+[2024.06.05-22.57.16:037][881]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2024.06.05-22.57.36:781][301]LogContentBrowser: Attempting asset rename: skate -> SM_Skate
+[2024.06.05-22.57.36:854][301]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2024.06.05-22.57.36:926][301]LogSavePackage: Moving output files for package: /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter
+[2024.06.05-22.57.36:926][301]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/BP_ThirdPersonCharacter7527A9A240D72562BD344EA4AD88879A.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset'
+[2024.06.05-22.57.36:928][301]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Meshes/Skate/SM_Skate" FILE="../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/SM_Skate.uasset" SILENT=true
+[2024.06.05-22.57.36:933][301]LogSavePackage: Moving output files for package: /Game/Meshes/Skate/SM_Skate
+[2024.06.05-22.57.36:933][301]LogSavePackage: Moving '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Saved/SM_Skate9FE0E48C446532AEA17F41A2BFDB1DB6.tmp' to '../../../../../../Users/Triket/Documents/GitHub/BGS_Skate_Test/BGS_Skate_Test/Content/Meshes/Skate/SM_Skate.uasset'
+[2024.06.05-22.57.36:946][301]LogFileHelpers: InternalPromptForCheckoutAndSave took 91 ms (total: 965 ms)
+[2024.06.05-22.57.36:975][301]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2024.06.05-22.57.36:996][301]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2024.06.05-22.57.37:009][301]LogUObjectHash: Compacting FUObjectHashTables data took   0.52ms
+[2024.06.05-22.57.37:015][301]AssetCheck: New page: Asset Save: multiple assets
+[2024.06.05-22.57.37:015][301]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter
+[2024.06.05-22.57.37:015][301]LogContentValidation: Display: Validating /Script/Engine.StaticMesh /Game/Meshes/Skate/SM_Skate.SM_Skate

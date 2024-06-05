@@ -19,6 +19,10 @@ DEFINE_LOG_CATEGORY(LogTemplateCharacter);
 
 ABGS_Skate_TestCharacter::ABGS_Skate_TestCharacter()
 {
+
+	skateSM = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("skate"));
+	skateSM->SetupAttachment(RootComponent);
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 		
@@ -69,6 +73,14 @@ void ABGS_Skate_TestCharacter::BeginPlay()
 		}
 	}
 }
+
+
+void ABGS_Skate_TestCharacter::Tick(float DeltaTime)
+{
+	AdjustSkateToFloor();
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -139,4 +151,28 @@ void ABGS_Skate_TestCharacter::Look(const FInputActionValue& Value)
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
 	}*/
+}
+
+void ABGS_Skate_TestCharacter::AdjustSkateToFloor()
+{
+	FVector Start = skateSM->GetComponentLocation();
+	FVector End = Start - FVector(0.f, 0.f, 100.f);
+
+	FHitResult HitResult;
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+
+	if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, Params))
+	{
+		FVector NewLocation = HitResult.Location;
+		NewLocation.Z += skateSM->GetComponentScale().Z * 0.5f; // Adjust Z to align properly
+		skateSM->SetWorldLocation(NewLocation);
+
+		// Optional: Align skateboard orientation with the floor normal
+		FRotator NewRotation = FRotationMatrix::MakeFromX(HitResult.Normal).Rotator();
+		skateSM->SetWorldRotation(NewRotation);
+	}
+
+	// For debugging purposes, visualize the line trace
+	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
 }
