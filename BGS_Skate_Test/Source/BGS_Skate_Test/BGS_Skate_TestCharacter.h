@@ -73,17 +73,14 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	UFUNCTION(BlueprintCallable)
-	float GerInputForward() { return lastDirection.Y; };
-
-	UFUNCTION(BlueprintCallable)
-	float GerInputRight() { return lastDirection.X; };
-
 
 private:
 
 	UFUNCTION()
 	void AdjustSkateToFloor();
+
+	UFUNCTION()
+	FVector WheelLineTrace(const FVector wheelLocation);
 
 	UPROPERTY(EditDefaultsOnly)
 	FVector2D lastDirection;

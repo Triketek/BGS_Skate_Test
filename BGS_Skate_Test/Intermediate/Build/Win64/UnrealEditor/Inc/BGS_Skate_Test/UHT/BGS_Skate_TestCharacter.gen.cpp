@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 // Cross Module References
 	BGS_SKATE_TEST_API UClass* Z_Construct_UClass_ABGS_Skate_TestCharacter();
 	BGS_SKATE_TEST_API UClass* Z_Construct_UClass_ABGS_Skate_TestCharacter_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
@@ -20,6 +21,14 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_BGS_Skate_Test();
 // End Cross Module References
+	DEFINE_FUNCTION(ABGS_Skate_TestCharacter::execWheelLineTrace)
+	{
+		P_GET_STRUCT(FVector,Z_Param_wheelLocation);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVector*)Z_Param__Result=P_THIS->WheelLineTrace(Z_Param_wheelLocation);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ABGS_Skate_TestCharacter::execAdjustSkateToFloor)
 	{
 		P_FINISH;
@@ -27,27 +36,12 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 		P_THIS->AdjustSkateToFloor();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(ABGS_Skate_TestCharacter::execGerInputRight)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->GerInputRight();
-		P_NATIVE_END;
-	}
-	DEFINE_FUNCTION(ABGS_Skate_TestCharacter::execGerInputForward)
-	{
-		P_FINISH;
-		P_NATIVE_BEGIN;
-		*(float*)Z_Param__Result=P_THIS->GerInputForward();
-		P_NATIVE_END;
-	}
 	void ABGS_Skate_TestCharacter::StaticRegisterNativesABGS_Skate_TestCharacter()
 	{
 		UClass* Class = ABGS_Skate_TestCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AdjustSkateToFloor", &ABGS_Skate_TestCharacter::execAdjustSkateToFloor },
-			{ "GerInputForward", &ABGS_Skate_TestCharacter::execGerInputForward },
-			{ "GerInputRight", &ABGS_Skate_TestCharacter::execGerInputRight },
+			{ "WheelLineTrace", &ABGS_Skate_TestCharacter::execWheelLineTrace },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -73,71 +67,49 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics
+	struct Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics
 	{
-		struct BGS_Skate_TestCharacter_eventGerInputForward_Parms
+		struct BGS_Skate_TestCharacter_eventWheelLineTrace_Parms
 		{
-			float ReturnValue;
+			FVector wheelLocation;
+			FVector ReturnValue;
 		};
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_wheelLocation_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_wheelLocation;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BGS_Skate_TestCharacter_eventGerInputForward_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::NewProp_ReturnValue,
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_wheelLocation_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_wheelLocation = { "wheelLocation", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BGS_Skate_TestCharacter_eventWheelLineTrace_Parms, wheelLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_wheelLocation_MetaData), Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_wheelLocation_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BGS_Skate_TestCharacter_eventWheelLineTrace_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_wheelLocation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::NewProp_ReturnValue,
 	};
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::Function_MetaDataParams[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "BGS_Skate_TestCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABGS_Skate_TestCharacter, nullptr, "GerInputForward", nullptr, nullptr, Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::BGS_Skate_TestCharacter_eventGerInputForward_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::Function_MetaDataParams) };
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::PropPointers) < 2048);
-	static_assert(sizeof(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::BGS_Skate_TestCharacter_eventGerInputForward_Parms) < MAX_uint16);
-	UFunction* Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward()
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABGS_Skate_TestCharacter, nullptr, "WheelLineTrace", nullptr, nullptr, Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::BGS_Skate_TestCharacter_eventWheelLineTrace_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00840401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::BGS_Skate_TestCharacter_eventWheelLineTrace_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward_Statics::FuncParams);
-		}
-		return ReturnFunction;
-	}
-	struct Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics
-	{
-		struct BGS_Skate_TestCharacter_eventGerInputRight_Parms
-		{
-			float ReturnValue;
-		};
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
-		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
-#endif
-		static const UECodeGen_Private::FFunctionParams FuncParams;
-	};
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BGS_Skate_TestCharacter_eventGerInputRight_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
-	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::NewProp_ReturnValue,
-	};
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::Function_MetaDataParams[] = {
-		{ "ModuleRelativePath", "BGS_Skate_TestCharacter.h" },
-	};
-#endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABGS_Skate_TestCharacter, nullptr, "GerInputRight", nullptr, nullptr, Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::PropPointers), sizeof(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::BGS_Skate_TestCharacter_eventGerInputRight_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::Function_MetaDataParams) };
-	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::PropPointers) < 2048);
-	static_assert(sizeof(Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::BGS_Skate_TestCharacter_eventGerInputRight_Parms) < MAX_uint16);
-	UFunction* Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight()
-	{
-		static UFunction* ReturnFunction = nullptr;
-		if (!ReturnFunction)
-		{
-			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight_Statics::FuncParams);
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -196,8 +168,7 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_AdjustSkateToFloor, "AdjustSkateToFloor" }, // 1720250174
-		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputForward, "GerInputForward" }, // 2482088517
-		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_GerInputRight, "GerInputRight" }, // 243614828
+		{ &Z_Construct_UFunction_ABGS_Skate_TestCharacter_WheelLineTrace, "WheelLineTrace" }, // 4141484168
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABGS_Skate_TestCharacter_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -356,9 +327,9 @@ void EmptyLinkFunctionForGeneratedCodeBGS_Skate_TestCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABGS_Skate_TestCharacter, ABGS_Skate_TestCharacter::StaticClass, TEXT("ABGS_Skate_TestCharacter"), &Z_Registration_Info_UClass_ABGS_Skate_TestCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABGS_Skate_TestCharacter), 3327039784U) },
+		{ Z_Construct_UClass_ABGS_Skate_TestCharacter, ABGS_Skate_TestCharacter::StaticClass, TEXT("ABGS_Skate_TestCharacter"), &Z_Registration_Info_UClass_ABGS_Skate_TestCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABGS_Skate_TestCharacter), 2170584791U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_3744404194(TEXT("/Script/BGS_Skate_Test"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_536510875(TEXT("/Script/BGS_Skate_Test"),
 		Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_Triket_Documents_GitHub_BGS_Skate_Test_BGS_Skate_Test_Source_BGS_Skate_Test_BGS_Skate_TestCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

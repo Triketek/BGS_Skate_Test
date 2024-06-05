@@ -7,6 +7,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/Controller.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "EnhancedInputComponent.h"
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
@@ -155,8 +156,23 @@ void ABGS_Skate_TestCharacter::Look(const FInputActionValue& Value)
 
 void ABGS_Skate_TestCharacter::AdjustSkateToFloor()
 {
-	FVector Start = skateSM->GetComponentLocation();
-	FVector End = Start - FVector(0.f, 0.f, 100.f);
+	FVector FrontWheelLocation = skateSM->GetSocketLocation("FW");
+	FVector BackWheelLocation = skateSM->GetSocketLocation("BW");
+
+	FVector FWHit = WheelLineTrace(FrontWheelLocation);
+	FVector BWHit = WheelLineTrace(BackWheelLocation);
+	
+
+	skateSM->SetWorldRotation(FQuat::Slerp(skateSM->GetComponentRotation().Quaternion(), UKismetMathLibrary::FindLookAtRotation(FWHit, BWHit).Quaternion(), 50.0f));
+	
+}
+
+
+
+FVector ABGS_Skate_TestCharacter::WheelLineTrace(const FVector wheelLocation)
+{
+	FVector Start = wheelLocation;
+	FVector End = Start - FVector(0.f, 0.f, 30.f);
 
 	FHitResult HitResult;
 	FCollisionQueryParams Params;
@@ -164,15 +180,7 @@ void ABGS_Skate_TestCharacter::AdjustSkateToFloor()
 
 	if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, Params))
 	{
-		FVector NewLocation = HitResult.Location;
-		NewLocation.Z += skateSM->GetComponentScale().Z * 0.5f; // Adjust Z to align properly
-		skateSM->SetWorldLocation(NewLocation);
-
-		// Optional: Align skateboard orientation with the floor normal
-		FRotator NewRotation = FRotationMatrix::MakeFromX(HitResult.Normal).Rotator();
-		skateSM->SetWorldRotation(NewRotation);
+		return HitResult.Location;
 	}
-
-	// For debugging purposes, visualize the line trace
-	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1, 0, 1);
+	return wheelLocation;
 }
