@@ -24,6 +24,10 @@ ABGS_Skate_TestCharacter::ABGS_Skate_TestCharacter()
 	skateSM = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("skate"));
 	skateSM->SetupAttachment(RootComponent);
 
+	// Set inertia settings
+	InertiaSpeed = 0.0f;
+	InertiaDeceleration = 5000.0f; // Increase this value for slower deceleration
+
 	// Set size for collision capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
 		
@@ -34,7 +38,7 @@ ABGS_Skate_TestCharacter::ABGS_Skate_TestCharacter()
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Character moves in the direction of input...	
-	GetCharacterMovement()->RotationRate = FRotator(0.0f, 500.0f, 0.0f); // ...at this rotation rate
+	GetCharacterMovement()->RotationRate = FRotator(0.0f, 250.0f, 0.0f); // ...at this rotation rate
 
 	// Note: For faster iteration times these variables, and many more, can be tweaked in the Character Blueprint
 	// instead of recompiling to adjust them
@@ -78,6 +82,8 @@ void ABGS_Skate_TestCharacter::BeginPlay()
 
 void ABGS_Skate_TestCharacter::Tick(float DeltaTime)
 {
+	Super::Tick(DeltaTime);
+
 	AdjustSkateToFloor();
 }
 
@@ -111,32 +117,32 @@ void ABGS_Skate_TestCharacter::Move(const FInputActionValue& Value)
 {
 	// input is a Vector2D
 	FVector2D MovementVector = Value.Get<FVector2D>();
-
+	LastMovementInput = Value.Get<FVector2D>();
 
 	if (Controller != nullptr)
 	{
-		// find out which way is forward
-		const FRotator Rotation = Controller->GetControlRotation();
-		const FRotator YawRotation(0, Rotation.Yaw, 0);
-
-		// get forward vector
-		/*const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-	
-		// get right vector 
-		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);*/
-
+		// Get forward vector
 		const FVector ForwardDirection = GetActorForwardVector();
+		const FVector RightDirection = GetActorRightVector();
 
-		FVector RightDirection = GetActorRightVector();
+		// Scale the input values for smooth movement
+		const float ForwardValue = FMath::Lerp(lastDirection.Y, MovementVector.Y, 0.9f);
+		const float RightValue = FMath::Lerp(lastDirection.X, MovementVector.X, 0.01f);
 
-		// add movement 
-		AddMovementInput(ForwardDirection, FMath::Lerp(MovementVector.Y, lastDirection.Y, 0.01));
-		lastDirection = MovementVector;
-		if (MovementVector.Y != 0 && GetVelocity().Length() != 0)
+		// Add movement in forward/backward direction
+		AddMovementInput(ForwardDirection, ForwardValue);
+		lastDirection.Y = ForwardValue;
+
+		// Add slight movement in the right/left direction if moving forward/backward
+		if (FMath::Abs(ForwardValue) > 0.01f)
 		{
-			AddMovementInput(RightDirection, (MovementVector.X) * 0.01);
-		};
-
+			AddMovementInput(RightDirection, RightValue * 0.1f);
+			lastDirection.X = RightValue;
+		}
+		else
+		{
+			lastDirection.X = 0.0f; // Reset X direction when not moving forward/backward
+		}
 		
 	}
 }
@@ -146,12 +152,12 @@ void ABGS_Skate_TestCharacter::Look(const FInputActionValue& Value)
 	// input is a Vector2D
 	FVector2D LookAxisVector = Value.Get<FVector2D>();
 
-	/*if (Controller != nullptr)
+	if (Controller != nullptr)
 	{
 		// add yaw and pitch input to controller
 		AddControllerYawInput(LookAxisVector.X);
 		AddControllerPitchInput(LookAxisVector.Y);
-	}*/
+	}
 }
 
 void ABGS_Skate_TestCharacter::AdjustSkateToFloor()
@@ -161,10 +167,21 @@ void ABGS_Skate_TestCharacter::AdjustSkateToFloor()
 
 	FVector FWHit = WheelLineTrace(FrontWheelLocation);
 	FVector BWHit = WheelLineTrace(BackWheelLocation);
-	
 
-	skateSM->SetWorldRotation(FQuat::Slerp(skateSM->GetComponentRotation().Quaternion(), UKismetMathLibrary::FindLookAtRotation(FWHit, BWHit).Quaternion(), 50.0f));
-	
+	// Find the look at rotation between the two hit points
+	FRotator DesiredRotation = UKismetMathLibrary::FindLookAtRotation(FWHit, BWHit);
+
+	// Convert to quaternion for smooth interpolation
+	FQuat CurrentRotation = skateSM->GetComponentRotation().Quaternion();
+	FQuat TargetRotation = DesiredRotation.Quaternion();
+
+	// Smoothly interpolate between the current and target rotations
+	FQuat NewRotation = FQuat::Slerp(CurrentRotation, TargetRotation, 0.1f); // Adjust the alpha value as needed (0.1f for smoother transition)
+
+	// Apply the new rotation
+	skateSM->SetWorldRotation(NewRotation);
+
+
 }
 
 
@@ -172,14 +189,15 @@ void ABGS_Skate_TestCharacter::AdjustSkateToFloor()
 FVector ABGS_Skate_TestCharacter::WheelLineTrace(const FVector wheelLocation)
 {
 	FVector Start = wheelLocation;
-	FVector End = Start - FVector(0.f, 0.f, 30.f);
+	Start.Z += 30.0f;
+	FVector End = Start - FVector(0.f, 0.f, 60.0f);
 
 	FHitResult HitResult;
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 
 	if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_Visibility, Params))
-	{
+	{		
 		return HitResult.Location;
 	}
 	return wheelLocation;

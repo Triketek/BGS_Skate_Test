@@ -88,6 +88,12 @@ private:
 	UPROPERTY(EditDefaultsOnly)
 	UStaticMeshComponent* skateSM;
 
+	FVector2D LastMovementInput;
+
+	// Inertia settings
+	float InertiaSpeed;
+	float InertiaDeceleration;
+
 
 
 
